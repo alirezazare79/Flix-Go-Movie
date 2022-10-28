@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+*:focus:where(input, textarea, select, button) {
+  outline: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #333;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.container {
+  width: 1320px;
+  max-width: 100%;
+  margin: auto;
+  display: block;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.align-item_center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.only_tablet {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .only_tablet {
+    display: block;
+  }
+}
+
+.only_desktop {
+  display: block;
+}
+
+@media screen and (max-width: 992px) {
+  .only_desktop {
+    display: none;
+  }
+}
+
+.only_mobile {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .only_mobile {
+    display: block;
+  }
+}
+
+body {
+  background: url("../img/section.jpg") center center/cover no-repeat;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sign_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.sign_content a {
+  margin-bottom: 40px;
+}
+
+.sign_content a img {
+  max-width: 170px;
+  vertical-align: middle;
+  border-style: none;
+}
+
+.sign_content_form {
+  border-top: solid 2px #8f00ff;
+  background-color: #28282d;
+  -webkit-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 40px 20px;
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.sign_content_form_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.sign_content_form_group input {
+  border-radius: 4px;
+  padding: 10px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.sign_content_form_group input:hover {
+  border-color: #8f00ff;
+}
+
+.sign_content_form_remember {
+  color: aliceblue;
+  width: 100%;
+  text-align: left;
+}
+
+.sign_content_form_btn {
+  border: 1px solid transparent;
+  white-space: nowrap;
+  margin-left: 32px;
+  background: #8F00FF;
+  color: #fff;
+  border-radius: 100px;
+  padding: 12px 20px;
+  text-transform: uppercase;
+  -webkit-transition: all 200ms ease;
+  transition: all 200ms ease;
+  cursor: pointer;
+}
+
+.sign_content_form_btn:hover {
+  border-color: #8F00FF;
+  background: #fff;
+  color: #8F00FF;
+}
+
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.sign_text {
+  margin-top: 20px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: 'Open Sans', sans-serif;
+}
+/*# sourceMappingURL=signin.css.map */

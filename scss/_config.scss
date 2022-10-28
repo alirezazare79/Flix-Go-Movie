@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+$perimaryColor : #8F00FF;
+$secondaryColor : #726af8;
+$textColor :#333;
+*:focus:where(input,textarea,select,button){
+    outline: none;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color : $textColor;
+    font-family: 'Poppins', sans-serif;;
+    line-height: 1;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: $textColor;
+}
+
+.container{
+    width: 1320px;
+    max-width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.row{
+    display: flex;
+}
+.align-item_center{
+    align-items: center;
+}
+.hidden{
+    opacity: 0;;
+}
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+@mixin btn {
+    border: 1px solid transparent;
+    white-space: nowrap;
+    margin-left: 32px;
+    background: $perimaryColor;
+    color: #fff;
+    border-radius: 100px;
+    padding: 12px 20px;
+    text-transform: uppercase;
+    transition: all 200ms ease;
+    cursor: pointer;
+    &:hover{
+        border-color: $perimaryColor;
+        background: #fff;
+        color: $perimaryColor;
+  }
+}
+
+@mixin transition2 {
+    transition: all 0.3s linear;
+}
+
+.only_tablet{
+    display: none;
+    @media screen and (max-width:768px) {
+        display: block;
+    }
+}
+.only_desktop{
+    display: block;
+    @media screen and (max-width:992px) {
+        display: none;
+    }
+}
+.only_mobile{
+    display: none;
+    @media screen and (max-width:480px) {
+        display: block;
+    }
+}
